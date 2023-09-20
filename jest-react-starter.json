@@ -1,0 +1,26 @@
+{
+	"jest-react-starter": {
+		"prefix": "jrs",
+		"body": [
+		  "import React from 'react';",
+		  "",
+		  "import { render, screen } from '@testing-library/react';",
+		  "",
+		  "import { ${1:${TM_FILENAME_BASE/(.test)//}} } from '..';",
+		  "import { $1Props } from '../types';",
+		  "",
+		  "const render$1 = (props?: Omit<$1Props, 'children'>) =>",
+		  "	render(<$1/>);"
+		  "",
+		  "describe('<$1/>', () => {",
+		  "  it('should render the $1', () => {",
+		  "    render$1();",
+		  "",
+		  "	  expect(screen.getByText('')).toBeInTheDocument();"
+		  "  });",
+		  "});",
+		  ""
+		],
+		"description": "Create a basic Jest template for testing React components with RTL",
+	  }
+}
